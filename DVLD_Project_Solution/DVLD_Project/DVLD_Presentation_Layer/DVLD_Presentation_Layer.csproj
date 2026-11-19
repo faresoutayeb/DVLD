@@ -1,0 +1,1675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{054EEA87-5319-4EDF-8795-46BA9B76A581}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DVLD_Presentation_Layer</RootNamespace>
+    <AssemblyName>DVLD_Presentation_Layer</AssemblyName>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ControlsNullExceptions</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>DVLD_Presentation_Layer.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>d7b55312-2a6e-4156-b935-3ada6e69d273-removebg-preview-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CredentialManagement, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CredentialManagement.1.0.2\lib\net35\CredentialManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="GlobalCustomControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\GlobalCustomControlLibrary\ClassLibrary1\bin\Debug\net48\GlobalCustomControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applications\ManageAppsTypes\ctrlTotalAppsTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\ManageAppsTypes\ctrlTotalAppsTypes.Designer.cs">
+      <DependentUpon>ctrlTotalAppsTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmExpiredSoonInterLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmExpiredSoonInterLicenses.Designer.cs">
+      <DependentUpon>frmExpiredSoonInterLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\frmLocalLicenseAppInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\frmLocalLicenseAppInfo.Designer.cs">
+      <DependentUpon>frmLocalLicenseAppInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\Manage_Local_Li_Apps_Screen\frmManageLocalLiApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\Manage_Local_Li_Apps_Screen\frmManageLocalLiApp.Designer.cs">
+      <DependentUpon>frmManageLocalLiApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\frmAddUpdateLocalDrivingLicesnseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_License_Apps_Ctrls\ctrlLocalApplicationDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_License_Apps_Ctrls\ctrlLocalApplicationDetails.Designer.cs">
+      <DependentUpon>ctrlLocalApplicationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Applications_Info\Apps_Screens\ApplicationInfoScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Applications_Info\Apps_Screens\ApplicationInfoScreen.Designer.cs">
+      <DependentUpon>ApplicationInfoScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalForms\Access_Denied_Screen\frmAccessDeniedScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalForms\Access_Denied_Screen\frmAccessDeniedScreen.Designer.cs">
+      <DependentUpon>frmAccessDeniedScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Classes\clsFormat.cs" />
+    <Compile Include="Global_Classes\clsUtil.cs" />
+    <Compile Include="Applications\Driving_License_Services\Detained_License\DetainedLicenseScreens\frmDetainLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Detained_License\DetainedLicenseScreens\frmDetainLicense.Designer.cs">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Detained_License\DetainedLicenseScreens\frmManageDetainLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Detained_License\DetainedLicenseScreens\frmManageDetainLicenses.Designer.cs">
+      <DependentUpon>frmManageDetainLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\Driver Screens\frmDriversScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver\Driver Screens\frmDriversScreen.Designer.cs">
+      <DependentUpon>frmDriversScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Issue_New_License\Issue_New_License_Screen\frmIssueNewLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Issue_New_License\Issue_New_License_Screen\frmIssueNewLicense.Designer.cs">
+      <DependentUpon>frmIssueNewLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Issue_New_License\Driving_License_Ctrs\ctrlDriverLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Issue_New_License\Driving_License_Ctrs\ctrlDriverLicenses.Designer.cs">
+      <DependentUpon>ctrlDriverLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Applications_Info\Apps_Ctrls\ctrlApplicationBasicInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Applications_Info\Apps_Ctrls\ctrlApplicationBasicInfo.Designer.cs">
+      <DependentUpon>ctrlApplicationBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\ManageAppsTypes\frmEditApplicationType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\ManageAppsTypes\frmEditApplicationType.Designer.cs">
+      <DependentUpon>frmEditApplicationType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Classes\clsGlobal.cs" />
+    <Compile Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmIssueInternationalLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmIssueInternationalLicense.Designer.cs">
+      <DependentUpon>frmIssueInternationalLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmManageInterLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmManageInterLicenses.Designer.cs">
+      <DependentUpon>frmManageInterLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\Driver_Licenses_History\License History Screens\frmLicenseHistoryScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver\Driver_Licenses_History\License History Screens\frmLicenseHistoryScreen.Designer.cs">
+      <DependentUpon>frmLicenseHistoryScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Applications_Controls\ctrlRecentApplications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Applications_Controls\ctrlRecentApplications.Designer.cs">
+      <DependentUpon>ctrlRecentApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlLastUpdatedAppointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlLastUpdatedAppointments.Designer.cs">
+      <DependentUpon>ctrlLastUpdatedAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlTotalLockedAppointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlTotalLockedAppointments.Designer.cs">
+      <DependentUpon>ctrlTotalLockedAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlTotalUnlockedAppointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlTotalUnlockedAppointments.Designer.cs">
+      <DependentUpon>ctrlTotalUnlockedAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\ctrlActualDateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\ctrlActualDateTime.Designer.cs">
+      <DependentUpon>ctrlActualDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\ctrlDataGridPagesMoving.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\ctrlDataGridPagesMoving.Designer.cs">
+      <DependentUpon>ctrlDataGridPagesMoving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlTotalAppointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Appointments_Controls\ctrlTotalAppointments.Designer.cs">
+      <DependentUpon>ctrlTotalAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlDetainReasons%28Top5%29.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlDetainReasons%28Top5%29.Designer.cs">
+      <DependentUpon>ctrlDetainReasons%28Top5%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlFinesOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlFinesOverview.Designer.cs">
+      <DependentUpon>ctrlFinesOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlNewDetentionsLast30Days.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlNewDetentionsLast30Days.Designer.cs">
+      <DependentUpon>ctrlNewDetentionsLast30Days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlNewDetentionsThisMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlNewDetentionsThisMonth.Designer.cs">
+      <DependentUpon>ctrlNewDetentionsThisMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlRecentDetainActivities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlRecentDetainActivities.Designer.cs">
+      <DependentUpon>ctrlRecentDetainActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalCurrentlyDetainedLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalCurrentlyDetainedLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalCurrentlyDetainedLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalDetainedFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalDetainedFees.Designer.cs">
+      <DependentUpon>ctrlTotalDetainedFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalDetainedLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalDetainedLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalDetainedLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalReleasedLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalReleasedLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalReleasedLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlAciveDriverLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlAciveDriverLicenses.Designer.cs">
+      <DependentUpon>ctrlAciveDriverLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlDriverLicenseSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlDriverLicenseSummary.Designer.cs">
+      <DependentUpon>ctrlDriverLicenseSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlExpiredDriverLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlExpiredDriverLicenses.Designer.cs">
+      <DependentUpon>ctrlExpiredDriverLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlInactiveDriverLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlInactiveDriverLicenses.Designer.cs">
+      <DependentUpon>ctrlInactiveDriverLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlQuickDriverLicensesInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlQuickDriverLicensesInfo.Designer.cs">
+      <DependentUpon>ctrlQuickDriverLicensesInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlTotalInternationalDriverLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlTotalInternationalDriverLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalInternationalDriverLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlTotalLocalDriverLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Driver_Licences_Controls\ctrlTotalLocalDriverLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalLocalDriverLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlTotalActiveDrivers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlTotalActiveDrivers.Designer.cs">
+      <DependentUpon>ctrlTotalActiveDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlLastDriversTableUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlLastDriversTableUpdate.Designer.cs">
+      <DependentUpon>ctrlLastDriversTableUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlTotalRecentDrivers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlTotalRecentDrivers.Designer.cs">
+      <DependentUpon>ctrlTotalRecentDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalActiveLocalLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalActiveLocalLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalActiveLocalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalActiveOrdinaryLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalActiveOrdinaryLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalActiveOrdinaryLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlTotalDrivers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Drivers_Controls\ctrlTotalDrivers.Designer.cs">
+      <DependentUpon>ctrlTotalDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalExpiredLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalExpiredLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalExpiredLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalInactiveLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalInactiveLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalInactiveLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalLocalLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Global_Licenses_Controls\ctrlTotalLocalLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalLocalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlExpiringSoonInterLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlExpiringSoonInterLicenses.Designer.cs">
+      <DependentUpon>ctrlExpiringSoonInterLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlInterLicensesExpirationAlert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlInterLicensesExpirationAlert.Designer.cs">
+      <DependentUpon>ctrlInterLicensesExpirationAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlInternationalLicensesIssuanceStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlInternationalLicensesIssuanceStatistic.Designer.cs">
+      <DependentUpon>ctrlInternationalLicensesIssuanceStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalActiveInternationalLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalActiveInternationalLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalActiveInternationalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalExpiredInternationalLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalExpiredInternationalLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalExpiredInternationalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalExpiredSoonLast30Days.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalExpiredSoonLast30Days.Designer.cs">
+      <DependentUpon>ctrlTotalExpiredSoonLast30Days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalInterLicensesIssuesThisMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalInterLicensesIssuesThisMonth.Designer.cs">
+      <DependentUpon>ctrlTotalInterLicensesIssuesThisMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalInternationalLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalInternationalLicenses.Designer.cs">
+      <DependentUpon>ctrlTotalInternationalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\License_History_Controls\ctrlLicenseHistorySumary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\License_History_Controls\ctrlLicenseHistorySumary.Designer.cs">
+      <DependentUpon>ctrlLicenseHistorySumary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalCompeleteApps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalCompeleteApps.Designer.cs">
+      <DependentUpon>ctrlTotalCompeleteApps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalCanceledApps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalCanceledApps.Designer.cs">
+      <DependentUpon>ctrlTotalCanceledApps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalLocalApplications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalLocalApplications.Designer.cs">
+      <DependentUpon>ctrlTotalLocalApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalNewApplications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlTotalNewApplications.Designer.cs">
+      <DependentUpon>ctrlTotalNewApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlUpcomingTests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Local_License_Application_Controls\ctrlUpcomingTests.Designer.cs">
+      <DependentUpon>ctrlUpcomingTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalActiveSessions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalActiveSessions.Designer.cs">
+      <DependentUpon>ctrlTotalActiveSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalLogsInPeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalLogsInPeriod.Designer.cs">
+      <DependentUpon>ctrlTotalLogsInPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalTodayLogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalTodayLogs.Designer.cs">
+      <DependentUpon>ctrlTotalTodayLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalLoginsLogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Logins_Logs_Controls\ctrlTotalLoginsLogs.Designer.cs">
+      <DependentUpon>ctrlTotalLoginsLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlRecentlyAddedPeople.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlRecentlyAddedPeople.Designer.cs">
+      <DependentUpon>ctrlRecentlyAddedPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalFemales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalFemales.Designer.cs">
+      <DependentUpon>ctrlTotalFemales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotallMales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotallMales.Designer.cs">
+      <DependentUpon>ctrlTotallMales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegisteredToday.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegisteredToday.Designer.cs">
+      <DependentUpon>ctrlTotalPeopleRegisteredToday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegistredThisMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegistredThisMonth.Designer.cs">
+      <DependentUpon>ctrlTotalPeopleRegistredThisMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegistredThisYear.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegistredThisYear.Designer.cs">
+      <DependentUpon>ctrlTotalPeopleRegistredThisYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPersons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Person_Controles\ctrlTotalPersons.Designer.cs">
+      <DependentUpon>ctrlTotalPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Roles_Controls\ctrlTotalRoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Roles_Controls\ctrlTotalRoles.Designer.cs">
+      <DependentUpon>ctrlTotalRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTodaySystemOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTodaySystemOverview.Designer.cs">
+      <DependentUpon>ctrlTodaySystemOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalActiveUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalActiveUsers.Designer.cs">
+      <DependentUpon>ctrlTotalActiveUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalInactiveUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalInactiveUsers.Designer.cs">
+      <DependentUpon>ctrlTotalInactiveUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalLockedUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalLockedUsers.Designer.cs">
+      <DependentUpon>ctrlTotalLockedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalOnlineUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalOnlineUsers.Designer.cs">
+      <DependentUpon>ctrlTotalOnlineUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlTotalUsers.Designer.cs">
+      <DependentUpon>ctrlTotalUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlUserDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlUserDetails.Designer.cs">
+      <DependentUpon>ctrlUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlRolesUsersDistribution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Global_Controls\Users_Controls\ctrlRolesUsersDistribution.Designer.cs">
+      <DependentUpon>ctrlRolesUsersDistribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License\License User Controls\ctrlInterLicenseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="License\License User Controls\ctrlInterLicenseInfo.Designer.cs">
+      <DependentUpon>ctrlInterLicenseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License\License User Controls\ctrlLicenseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="License\License User Controls\ctrlLicenseInfo.Designer.cs">
+      <DependentUpon>ctrlLicenseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License\License User Controls\ctrlLocalLicenseFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="License\License User Controls\ctrlLocalLicenseFilter.Designer.cs">
+      <DependentUpon>ctrlLocalLicenseFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License\LicenseScreens\international_License_Screen\frmInterLicenseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License\LicenseScreens\international_License_Screen\frmInterLicenseInfo.Designer.cs">
+      <DependentUpon>frmInterLicenseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License\LicenseScreens\License_Info_Screen\frmLicenseInfoScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License\LicenseScreens\License_Info_Screen\frmLicenseInfoScreen.Designer.cs">
+      <DependentUpon>frmLicenseInfoScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\Manage_Local_Li_Apps_Screen\FunctionsToFire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\Manage_Local_Li_Apps_Screen\LocalFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\Manage_Local_Li_Apps_Screen\LocalVariablesEventsDelegates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_License_Apps_Ctrls\ctrlDrivingLicenceApplicationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Local_License_Apps_Ctrls\ctrlDrivingLicenceApplicationInfo.Designer.cs">
+      <DependentUpon>ctrlDrivingLicenceApplicationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlMainMenueCounter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlMainMenueCounter.Designer.cs">
+      <DependentUpon>ctrlMainMenueCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlSystemInformations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlSystemInformations.Designer.cs">
+      <DependentUpon>ctrlSystemInformations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlSystemOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlSystemOverview.Designer.cs">
+      <DependentUpon>ctrlSystemOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlWelcomeUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main_Menue\Main_Menue_Controls\ctrlWelcomeUser.Designer.cs">
+      <DependentUpon>ctrlWelcomeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlPersonInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlPersonInfoCard.Designer.cs">
+      <DependentUpon>ctrlPersonInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlSmallPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlSmallPersonInfo.Designer.cs">
+      <DependentUpon>ctrlSmallPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmFindPersonScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmFindPersonScreen.Designer.cs">
+      <DependentUpon>frmFindPersonScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions Screens\Add_Edit_User_Permissions_Screen\frmAddEditUserPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions Screens\Add_Edit_User_Permissions_Screen\frmAddEditUserPermissions.Designer.cs">
+      <DependentUpon>frmAddEditUserPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions Screens\frmFindUserPermisions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions Screens\frmFindUserPermisions.Designer.cs">
+      <DependentUpon>frmFindUserPermisions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions Screens\Add_Edit_User_Permissions_Screen\LocalFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions Screens\Manage_User_Permisisons_Screen\frmManageUsersPermisions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions Screens\Manage_User_Permisisons_Screen\frmManageUsersPermisions.Designer.cs">
+      <DependentUpon>frmManageUsersPermisions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\ctrlUserPermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\ctrlUserPermissions.Designer.cs">
+      <DependentUpon>ctrlUserPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\ManageAppsTypes\frmManageAppTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\ManageAppsTypes\frmManageAppTypes.Designer.cs">
+      <DependentUpon>frmManageAppTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Tests_Types\frmManageTestType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Tests_Types\frmManageTestType.Designer.cs">
+      <DependentUpon>frmManageTestType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmManagePeopleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmManagePeopleScreen.Designer.cs">
+      <DependentUpon>frmManagePeopleScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlEditPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlEditPersonInfo.Designer.cs">
+      <DependentUpon>ctrlEditPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login_DVLD_Screens\Login_DVLD_Screen\frmDVLD_Login_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login_DVLD_Screens\Login_DVLD_Screen\frmDVLD_Login_Screen.Designer.cs">
+      <DependentUpon>frmDVLD_Login_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menue\Main_DVLD_Menue_Screens\Main_DVLD_Menu_Screen\frmMainDVLDMenuScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Menue\Main_DVLD_Menue_Screens\Main_DVLD_Menu_Screen\frmMainDVLDMenuScreen.Designer.cs">
+      <DependentUpon>frmMainDVLDMenuScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlFilterPersonInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlFilterPersonInformation.Designer.cs">
+      <DependentUpon>ctrlFilterPersonInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\PersonControles\ctrlPersonInfo.Designer.cs">
+      <DependentUpon>ctrlPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmAddEditPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmAddEditPerson.Designer.cs">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmPersonInformations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\PersonScreens\frmPersonInformations.Designer.cs">
+      <DependentUpon>frmPersonInformations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Applications\Driving_License_Services\Release_License\Realease_License_Screens\frmReleaseLicenseScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Release_License\Realease_License_Screens\frmReleaseLicenseScreen.Designer.cs">
+      <DependentUpon>frmReleaseLicenseScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Renew_Driving_License\Renew_License_Screens\FunctionsToFire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Renew_Driving_License\Renew_License_Screens\frmRenewLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\Renew_Driving_License\Renew_License_Screens\frmRenewLicense.Designer.cs">
+      <DependentUpon>frmRenewLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\ReplaceDamagLostLicenses\Replacement_Screens\frmReplaceLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Driving_License_Services\ReplaceDamagLostLicenses\Replacement_Screens\frmReplaceLicense.Designer.cs">
+      <DependentUpon>frmReplaceLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\frmScheduleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\frmScheduleTest.Designer.cs">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\DoTheTestScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\DoTheTestScreen.Designer.cs">
+      <DependentUpon>DoTheTestScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\TestsAppointmentsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\TestsAppointmentsScreen.Designer.cs">
+      <DependentUpon>TestsAppointmentsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\ctrlScheduleTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\ctrlScheduleTest.Designer.cs">
+      <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\ctrlScheduledTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\ctrlScheduledTest.Designer.cs">
+      <DependentUpon>ctrlScheduledTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\Manage_Tests_Types\frmUpdateTestTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage_Tests_Types\frmUpdateTestTypes.Designer.cs">
+      <DependentUpon>frmUpdateTestTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\ctrlUserPermissionsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\ctrlUserPermissionsCard.Designer.cs">
+      <DependentUpon>ctrlUserPermissionsCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupApplicationsPermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupApplicationsPermissions.Designer.cs">
+      <DependentUpon>ctrlGroupApplicationsPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupDetainReleaseLicensePermisisons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupDetainReleaseLicensePermisisons.Designer.cs">
+      <DependentUpon>ctrlGroupDetainReleaseLicensePermisisons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupInternationalPermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupInternationalPermissions.Designer.cs">
+      <DependentUpon>ctrlGroupInternationalPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupLocalLicensePermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupLocalLicensePermissions.Designer.cs">
+      <DependentUpon>ctrlGroupLocalLicensePermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupPeoplePermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupPeoplePermissions.Designer.cs">
+      <DependentUpon>ctrlGroupPeoplePermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupSystemPermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupSystemPermissions.Designer.cs">
+      <DependentUpon>ctrlGroupSystemPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupTestPermisions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupTestPermisions.Designer.cs">
+      <DependentUpon>ctrlGroupTestPermisions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupUserPermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupUserPermissions.Designer.cs">
+      <DependentUpon>ctrlGroupUserPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User Logs\User_logs_Screen\frmUsersLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User Logs\User_logs_Screen\frmUsersLogs.Designer.cs">
+      <DependentUpon>frmUsersLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Controles\ctrlFindUserFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\User_Controles\ctrlFindUserFilter.Designer.cs">
+      <DependentUpon>ctrlFindUserFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Controles\ctrlSmallUserInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\User_Controles\ctrlSmallUserInfoCard.Designer.cs">
+      <DependentUpon>ctrlSmallUserInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Controles\ctrlUserLoginInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\User_Controles\ctrlUserLoginInfo.Designer.cs">
+      <DependentUpon>ctrlUserLoginInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Screens\Add_Edit_User_Screen\frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Screens\Add_Edit_User_Screen\frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Screens\Add_Edit_User_Screen\FunctionsToFire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Screens\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Screens\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Screens\frmDeleteUserScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Screens\frmDeleteUserScreen.Designer.cs">
+      <DependentUpon>frmDeleteUserScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Screens\Manage_Users_Screen\LocalFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Screens\frmShowUserInfoScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Screens\frmShowUserInfoScreen.Designer.cs">
+      <DependentUpon>frmShowUserInfoScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\User_Screens\Manage_Users_Screen\frmManageUsersScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\User_Screens\Manage_Users_Screen\frmManageUsersScreen.Designer.cs">
+      <DependentUpon>frmManageUsersScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Applications\ManageAppsTypes\ctrlTotalAppsTypes.resx">
+      <DependentUpon>ctrlTotalAppsTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmExpiredSoonInterLicenses.resx">
+      <DependentUpon>frmExpiredSoonInterLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\frmLocalLicenseAppInfo.resx">
+      <DependentUpon>frmLocalLicenseAppInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\Manage_Local_Li_Apps_Screen\frmManageLocalLiApp.resx">
+      <DependentUpon>frmManageLocalLiApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\frmAddUpdateLocalDrivingLicesnseApplication.resx">
+      <DependentUpon>frmAddUpdateLocalDrivingLicesnseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Local_License_Apps_Ctrls\ctrlLocalApplicationDetails.resx">
+      <DependentUpon>ctrlLocalApplicationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Applications_Info\Apps_Screens\ApplicationInfoScreen.resx">
+      <DependentUpon>ApplicationInfoScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving_License_Services\Detained_License\DetainedLicenseScreens\frmDetainLicense.resx">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving_License_Services\Detained_License\DetainedLicenseScreens\frmManageDetainLicenses.resx">
+      <DependentUpon>frmManageDetainLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver\Driver Screens\frmDriversScreen.resx">
+      <DependentUpon>frmDriversScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving_License_Services\Issue_New_License\Issue_New_License_Screen\frmIssueNewLicense.resx">
+      <DependentUpon>frmIssueNewLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving_License_Services\Issue_New_License\Driving_License_Ctrs\ctrlDriverLicenses.resx">
+      <DependentUpon>ctrlDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Applications_Info\Apps_Ctrls\ctrlApplicationBasicInfo.resx">
+      <DependentUpon>ctrlApplicationBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\ManageAppsTypes\frmEditApplicationType.resx">
+      <DependentUpon>frmEditApplicationType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmIssueInternationalLicense.resx">
+      <DependentUpon>frmIssueInternationalLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Inter_Licenses\Inter_License_Screens\frmManageInterLicenses.resx">
+      <DependentUpon>frmManageInterLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver\Driver_Licenses_History\License History Screens\frmLicenseHistoryScreen.resx">
+      <DependentUpon>frmLicenseHistoryScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalForms\Access_Denied_Screen\frmAccessDeniedScreen.resx">
+      <DependentUpon>frmAccessDeniedScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Applications_Controls\ctrlRecentApplications.resx">
+      <DependentUpon>ctrlRecentApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Appointments_Controls\ctrlLastUpdatedAppointments.resx">
+      <DependentUpon>ctrlLastUpdatedAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Appointments_Controls\ctrlTotalLockedAppointments.resx">
+      <DependentUpon>ctrlTotalLockedAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Appointments_Controls\ctrlTotalUnlockedAppointments.resx">
+      <DependentUpon>ctrlTotalUnlockedAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\ctrlActualDateTime.resx">
+      <DependentUpon>ctrlActualDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\ctrlDataGridPagesMoving.resx">
+      <DependentUpon>ctrlDataGridPagesMoving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Appointments_Controls\ctrlTotalAppointments.resx">
+      <DependentUpon>ctrlTotalAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlDetainReasons%28Top5%29.resx">
+      <DependentUpon>ctrlDetainReasons%28Top5%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlFinesOverview.resx">
+      <DependentUpon>ctrlFinesOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlNewDetentionsLast30Days.resx">
+      <DependentUpon>ctrlNewDetentionsLast30Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlNewDetentionsThisMonth.resx">
+      <DependentUpon>ctrlNewDetentionsThisMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlRecentDetainActivities.resx">
+      <DependentUpon>ctrlRecentDetainActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalCurrentlyDetainedLicenses.resx">
+      <DependentUpon>ctrlTotalCurrentlyDetainedLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalDetainedFees.resx">
+      <DependentUpon>ctrlTotalDetainedFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalDetainedLicenses.resx">
+      <DependentUpon>ctrlTotalDetainedLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Detain_Licenses_Controls\ctrlTotalReleasedLicenses.resx">
+      <DependentUpon>ctrlTotalReleasedLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Driver_Licences_Controls\ctrlAciveDriverLicenses.resx">
+      <DependentUpon>ctrlAciveDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Driver_Licences_Controls\ctrlDriverLicenseSummary.resx">
+      <DependentUpon>ctrlDriverLicenseSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Driver_Licences_Controls\ctrlExpiredDriverLicenses.resx">
+      <DependentUpon>ctrlExpiredDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Driver_Licences_Controls\ctrlInactiveDriverLicenses.resx">
+      <DependentUpon>ctrlInactiveDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Driver_Licences_Controls\ctrlQuickDriverLicensesInfo.resx">
+      <DependentUpon>ctrlQuickDriverLicensesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Driver_Licences_Controls\ctrlTotalInternationalDriverLicenses.resx">
+      <DependentUpon>ctrlTotalInternationalDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Driver_Licences_Controls\ctrlTotalLocalDriverLicenses.resx">
+      <DependentUpon>ctrlTotalLocalDriverLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Drivers_Controls\ctrlTotalActiveDrivers.resx">
+      <DependentUpon>ctrlTotalActiveDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Drivers_Controls\ctrlLastDriversTableUpdate.resx">
+      <DependentUpon>ctrlLastDriversTableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Drivers_Controls\ctrlTotalRecentDrivers.resx">
+      <DependentUpon>ctrlTotalRecentDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Global_Licenses_Controls\ctrlTotalActiveLocalLicenses.resx">
+      <DependentUpon>ctrlTotalActiveLocalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Global_Licenses_Controls\ctrlTotalActiveOrdinaryLicenses.resx">
+      <DependentUpon>ctrlTotalActiveOrdinaryLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Drivers_Controls\ctrlTotalDrivers.resx">
+      <DependentUpon>ctrlTotalDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Global_Licenses_Controls\ctrlTotalExpiredLicenses.resx">
+      <DependentUpon>ctrlTotalExpiredLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Global_Licenses_Controls\ctrlTotalInactiveLicenses.resx">
+      <DependentUpon>ctrlTotalInactiveLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Global_Licenses_Controls\ctrlTotalLocalLicenses.resx">
+      <DependentUpon>ctrlTotalLocalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlExpiringSoonInterLicenses.resx">
+      <DependentUpon>ctrlExpiringSoonInterLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlInterLicensesExpirationAlert.resx">
+      <DependentUpon>ctrlInterLicensesExpirationAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlInternationalLicensesIssuanceStatistic.resx">
+      <DependentUpon>ctrlInternationalLicensesIssuanceStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalActiveInternationalLicenses.resx">
+      <DependentUpon>ctrlTotalActiveInternationalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalExpiredInternationalLicenses.resx">
+      <DependentUpon>ctrlTotalExpiredInternationalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalExpiredSoonLast30Days.resx">
+      <DependentUpon>ctrlTotalExpiredSoonLast30Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalInterLicensesIssuesThisMonth.resx">
+      <DependentUpon>ctrlTotalInterLicensesIssuesThisMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\InternationalLicenses_Controls\ctrlTotalInternationalLicenses.resx">
+      <DependentUpon>ctrlTotalInternationalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\License_History_Controls\ctrlLicenseHistorySumary.resx">
+      <DependentUpon>ctrlLicenseHistorySumary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Local_License_Application_Controls\ctrlTotalCompeleteApps.resx">
+      <DependentUpon>ctrlTotalCompeleteApps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Local_License_Application_Controls\ctrlTotalCanceledApps.resx">
+      <DependentUpon>ctrlTotalCanceledApps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Local_License_Application_Controls\ctrlTotalLocalApplications.resx">
+      <DependentUpon>ctrlTotalLocalApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Local_License_Application_Controls\ctrlTotalNewApplications.resx">
+      <DependentUpon>ctrlTotalNewApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Local_License_Application_Controls\ctrlUpcomingTests.resx">
+      <DependentUpon>ctrlUpcomingTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Logins_Logs_Controls\ctrlTotalActiveSessions.resx">
+      <DependentUpon>ctrlTotalActiveSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Logins_Logs_Controls\ctrlTotalLoginsLogs.resx">
+      <DependentUpon>ctrlTotalLoginsLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Logins_Logs_Controls\ctrlTotalLogsInPeriod.resx">
+      <DependentUpon>ctrlTotalLogsInPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Logins_Logs_Controls\ctrlTotalTodayLogs.resx">
+      <DependentUpon>ctrlTotalTodayLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Person_Controles\ctrlRecentlyAddedPeople.resx">
+      <DependentUpon>ctrlRecentlyAddedPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Person_Controles\ctrlTotalFemales.resx">
+      <DependentUpon>ctrlTotalFemales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Person_Controles\ctrlTotallMales.resx">
+      <DependentUpon>ctrlTotallMales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegisteredToday.resx">
+      <DependentUpon>ctrlTotalPeopleRegisteredToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegistredThisMonth.resx">
+      <DependentUpon>ctrlTotalPeopleRegistredThisMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Person_Controles\ctrlTotalPeopleRegistredThisYear.resx">
+      <DependentUpon>ctrlTotalPeopleRegistredThisYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Person_Controles\ctrlTotalPersons.resx">
+      <DependentUpon>ctrlTotalPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Roles_Controls\ctrlTotalRoles.resx">
+      <DependentUpon>ctrlTotalRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlTodaySystemOverview.resx">
+      <DependentUpon>ctrlTodaySystemOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlTotalActiveUsers.resx">
+      <DependentUpon>ctrlTotalActiveUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlTotalInactiveUsers.resx">
+      <DependentUpon>ctrlTotalInactiveUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlTotalLockedUsers.resx">
+      <DependentUpon>ctrlTotalLockedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlTotalOnlineUsers.resx">
+      <DependentUpon>ctrlTotalOnlineUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlTotalUsers.resx">
+      <DependentUpon>ctrlTotalUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlUserDetails.resx">
+      <DependentUpon>ctrlUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global_Controls\Users_Controls\ctrlRolesUsersDistribution.resx">
+      <DependentUpon>ctrlRolesUsersDistribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\License User Controls\ctrlInterLicenseInfo.resx">
+      <DependentUpon>ctrlInterLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\License User Controls\ctrlLicenseInfo.resx">
+      <DependentUpon>ctrlLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\License User Controls\ctrlLocalLicenseFilter.resx">
+      <DependentUpon>ctrlLocalLicenseFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\LicenseScreens\international_License_Screen\frmInterLicenseInfo.resx">
+      <DependentUpon>frmInterLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License\LicenseScreens\License_Info_Screen\frmLicenseInfoScreen.resx">
+      <DependentUpon>frmLicenseInfoScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Local_License_Apps_Ctrls\ctrlDrivingLicenceApplicationInfo.resx">
+      <DependentUpon>ctrlDrivingLicenceApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menue\Main_Menue_Controls\ctrlMainMenueCounter.resx">
+      <DependentUpon>ctrlMainMenueCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menue\Main_Menue_Controls\ctrlSystemInformations.resx">
+      <DependentUpon>ctrlSystemInformations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menue\Main_Menue_Controls\ctrlSystemOverview.resx">
+      <DependentUpon>ctrlSystemOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menue\Main_Menue_Controls\ctrlWelcomeUser.resx">
+      <DependentUpon>ctrlWelcomeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonControles\ctrlPersonInfoCard.resx">
+      <DependentUpon>ctrlPersonInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonControles\ctrlSmallPersonInfo.resx">
+      <DependentUpon>ctrlSmallPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonScreens\frmFindPersonScreen.resx">
+      <DependentUpon>frmFindPersonScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions Screens\Add_Edit_User_Permissions_Screen\frmAddEditUserPermissions.resx">
+      <DependentUpon>frmAddEditUserPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions Screens\frmFindUserPermisions.resx">
+      <DependentUpon>frmFindUserPermisions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions Screens\Manage_User_Permisisons_Screen\frmManageUsersPermisions.resx">
+      <DependentUpon>frmManageUsersPermisions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\ctrlUserPermissions.resx">
+      <DependentUpon>ctrlUserPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\ManageAppsTypes\frmManageAppTypes.resx">
+      <DependentUpon>frmManageAppTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Tests_Types\frmManageTestType.resx">
+      <DependentUpon>frmManageTestType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonScreens\frmManagePeopleScreen.resx">
+      <DependentUpon>frmManagePeopleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonControles\ctrlEditPersonInfo.resx">
+      <DependentUpon>ctrlEditPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login_DVLD_Screens\Login_DVLD_Screen\frmDVLD_Login_Screen.resx">
+      <DependentUpon>frmDVLD_Login_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menue\Main_DVLD_Menue_Screens\Main_DVLD_Menu_Screen\frmMainDVLDMenuScreen.resx">
+      <DependentUpon>frmMainDVLDMenuScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonControles\ctrlFilterPersonInformation.resx">
+      <DependentUpon>ctrlFilterPersonInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonControles\ctrlPersonInfo.resx">
+      <DependentUpon>ctrlPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonScreens\frmAddEditPerson.resx">
+      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\PersonScreens\frmPersonInformations.resx">
+      <DependentUpon>frmPersonInformations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving_License_Services\Release_License\Realease_License_Screens\frmReleaseLicenseScreen.resx">
+      <DependentUpon>frmReleaseLicenseScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving_License_Services\Renew_Driving_License\Renew_License_Screens\frmRenewLicense.resx">
+      <DependentUpon>frmRenewLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Driving_License_Services\ReplaceDamagLostLicenses\Replacement_Screens\frmReplaceLicense.resx">
+      <DependentUpon>frmReplaceLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\frmScheduleTest.resx">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\DoTheTestScreen.resx">
+      <DependentUpon>DoTheTestScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\TestsAppointmentsScreen.resx">
+      <DependentUpon>TestsAppointmentsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\ctrlScheduleTest.resx">
+      <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Local_Licence_Apps\Schedule_Tests\ctrlScheduledTest.resx">
+      <DependentUpon>ctrlScheduledTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage_Tests_Types\frmUpdateTestTypes.resx">
+      <DependentUpon>frmUpdateTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\ctrlUserPermissionsCard.resx">
+      <DependentUpon>ctrlUserPermissionsCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupApplicationsPermissions.resx">
+      <DependentUpon>ctrlGroupApplicationsPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupDetainReleaseLicensePermisisons.resx">
+      <DependentUpon>ctrlGroupDetainReleaseLicensePermisisons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupInternationalPermissions.resx">
+      <DependentUpon>ctrlGroupInternationalPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupLocalLicensePermissions.resx">
+      <DependentUpon>ctrlGroupLocalLicensePermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupPeoplePermissions.resx">
+      <DependentUpon>ctrlGroupPeoplePermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupSystemPermissions.resx">
+      <DependentUpon>ctrlGroupSystemPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupTestPermisions.resx">
+      <DependentUpon>ctrlGroupTestPermisions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Manage_Users_Permissions\User Permissions User Controls\PermissionsGroups\ctrlGroupUserPermissions.resx">
+      <DependentUpon>ctrlGroupUserPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User Logs\User_logs_Screen\frmUsersLogs.resx">
+      <DependentUpon>frmUsersLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Controles\ctrlFindUserFilter.resx">
+      <DependentUpon>ctrlFindUserFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Controles\ctrlSmallUserInfoCard.resx">
+      <DependentUpon>ctrlSmallUserInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Controles\ctrlUserLoginInfo.resx">
+      <DependentUpon>ctrlUserLoginInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Screens\Add_Edit_User_Screen\frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Screens\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Screens\frmDeleteUserScreen.resx">
+      <DependentUpon>frmDeleteUserScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Screens\frmShowUserInfoScreen.resx">
+      <DependentUpon>frmShowUserInfoScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\User_Screens\Manage_Users_Screen\frmManageUsersScreen.resx">
+      <DependentUpon>frmManageUsersScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DVLD_Bussiness_Layer\DVLD_Bussiness_Layer.csproj">
+      <Project>{8a9c17a0-4e3a-4bed-b22c-53374febca67}</Project>
+      <Name>DVLD_Bussiness_Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07ac8175-ec79-4fcd-8f37-d80a9e8adb92.png" />
+    <None Include="Resources\0aa457e2-4761-489b-9d43-3add3e24cad1 %282%29.png" />
+    <Content Include="d7b55312-2a6e-4156-b935-3ada6e69d273-removebg-preview-removebg-preview.ico" />
+    <Content Include="Resources\0aa457e2-4761-489b-9d43-3add3e24cad1.png" />
+    <None Include="Resources\43ac4478-3b1c-497d-9632-4241129f9f4b.png" />
+    <None Include="Resources\112f1707-1639-45eb-80bc-82f7d2b30345.png" />
+    <None Include="Resources\0aab7292-f56e-4046-a026-82a5e2a985aa.png" />
+    <None Include="Resources\33f33549-4816-4f32-8003-036bb919b6f6.png" />
+    <None Include="Resources\199a9e16-159d-447c-a3f2-b9646c5eeb25.png" />
+    <Content Include="Resources\50b1b102-ea67-4f65-ae73-7471f6b4bdf2.png" />
+    <None Include="Resources\81407a2a-c338-4e10-866c-732c0f0eb2ab.png" />
+    <None Include="Resources\81407a2a-c338-4e10-866c-732c0f0eb2ab1.png" />
+    <None Include="Resources\add %281%29.png" />
+    <None Include="Resources\Active-Users.png" />
+    <None Include="Resources\ad7f2499-7aee-4269-a428-b3909a441f7e.png" />
+    <Content Include="Resources\add-group.png" />
+    <None Include="Resources\add.png" />
+    <Content Include="Resources\address.png" />
+    <None Include="Resources\apps.png" />
+    <None Include="Resources\app.png" />
+    <None Include="Resources\application %282%29.png" />
+    <Content Include="Resources\arrow-right.png" />
+    <Content Include="Resources\arrow-right1.png" />
+    <Content Include="Resources\Back.png" />
+    <Content Include="Resources\BackFast.png" />
+    <Content Include="Resources\BackFast1.png" />
+    <Content Include="Resources\BackFast2.png" />
+    <Content Include="Resources\background %282%29.png" />
+    <Content Include="Resources\background %282%291.png" />
+    <Content Include="Resources\background %283%29.png" />
+    <None Include="Resources\birth.png" />
+    <Content Include="Resources\block_apps_add.png" />
+    <None Include="Resources\bus-driver.png" />
+    <None Include="Resources\calandre.png" />
+    <Content Include="Resources\calendar %281%29.png" />
+    <None Include="Resources\calendar %282%29.png" />
+    <None Include="Resources\calendar %283%29.png" />
+    <Content Include="Resources\calendar.png" />
+    <Content Include="Resources\calendar_day.png" />
+    <Content Include="Resources\car-emission.png" />
+    <Content Include="Resources\car-wash.png" />
+    <None Include="Resources\car.png" />
+    <Content Include="Resources\card.png" />
+    <Content Include="Resources\car_test.png" />
+    <Content Include="Resources\change.png" />
+    <Content Include="Resources\change1.png" />
+    <None Include="Resources\chart.png" />
+    <Content Include="Resources\check.png" />
+    <None Include="Resources\circle %281%29.png" />
+    <None Include="Resources\circle %282%29.png" />
+    <Content Include="Resources\circle.png" />
+    <None Include="Resources\circle1.png" />
+    <Content Include="Resources\clarity.png" />
+    <Content Include="Resources\cleaning-time.png" />
+    <Content Include="Resources\close.png" />
+    <None Include="Resources\cocher.png" />
+    <Content Include="Resources\contact-us.png" />
+    <Content Include="Resources\contact-us1.png" />
+    <None Include="Resources\contacts.png" />
+    <Content Include="Resources\control-system.png" />
+    <Content Include="Resources\control-system1.png" />
+    <None Include="Resources\coordinate.png" />
+    <Content Include="Resources\cross.png" />
+    <Content Include="Resources\cyber-security %281%29.png" />
+    <Content Include="Resources\cyber-security.png" />
+    <None Include="Resources\d85cde61-aee7-4e89-8053-e5bf0e3137b1.png" />
+    <Content Include="Resources\dc43f5bb-c22e-4a02-90ce-c05616b6d239.png" />
+    <Content Include="Resources\dc43f5bb-c22e-4a02-90ce-c05616b6d239.png.png" />
+    <Content Include="Resources\default_test.png" />
+    <None Include="Resources\delay %281%29.png" />
+    <Content Include="Resources\destination.png" />
+    <Content Include="Resources\destination1.png" />
+    <Content Include="Resources\diagnostic.png" />
+    <Content Include="Resources\diskette.png" />
+    <Content Include="Resources\dollar %281%29.png" />
+    <Content Include="Resources\dollar-sign.png" />
+    <Content Include="Resources\dollar-symbol.png" />
+    <Content Include="Resources\dollar-symbol1.png" />
+    <Content Include="Resources\dollar.png" />
+    <Content Include="Resources\dollar1.png" />
+    <None Include="Resources\drive.png" />
+    <None Include="Resources\drivers-license.png" />
+    <None Include="Resources\drivers-license %281%29.png" />
+    <None Include="Resources\driver-license.png" />
+    <None Include="Resources\driver.png" />
+    <None Include="Resources\drapeau.png" />
+    <Content Include="Resources\driver_config.png" />
+    <None Include="Resources\driving-license %281%29.png" />
+    <None Include="Resources\driving-license.png" />
+    <None Include="Resources\driving-license %282%29.png" />
+    <None Include="Resources\DVLD-Login-Screen-Image.png" />
+    <Content Include="Resources\ec98a8f1-f176-4964-9d29-5ac7b077cd17.png" />
+    <Content Include="Resources\ec98a8f1-f176-4964-9d29-5ac7b077cd171.jpg" />
+    <Content Include="Resources\ec98a8f1-f176-4964-9d29-5ac7b077cd171.png" />
+    <None Include="Resources\edit.png" />
+    <Content Include="Resources\email.png" />
+    <None Include="Resources\engrenage.png" />
+    <Content Include="Resources\enter.png" />
+    <Content Include="Resources\exam.png" />
+    <None Include="Resources\expired.png" />
+    <None Include="Resources\expired %282%29.png" />
+    <None Include="Resources\expired %283%29.png" />
+    <None Include="Resources\expired %284%29.png" />
+    <None Include="Resources\expired %285%29.png" />
+    <Content Include="Resources\eye-examination.png" />
+    <None Include="Resources\eye-liner.png" />
+    <Content Include="Resources\eye-test %281%29.png" />
+    <Content Include="Resources\eye-test.png" />
+    <Content Include="Resources\eye.png" />
+    <Content Include="Resources\eyetest.png" />
+    <Content Include="Resources\f26ac7f3-cd4d-44bf-ab7b-a395b8aeeb32.png" />
+    <Content Include="Resources\f26ac7f3-cd4d-44bf-ab7b-a395b8aeeb321.png" />
+    <None Include="Resources\f932c22c-708e-4d89-8111-69f2a815add5.png" />
+    <None Include="Resources\female.png" />
+    <Content Include="Resources\floppy-disk.png" />
+    <Content Include="Resources\floppy-disk1.png" />
+    <Content Include="Resources\form.png" />
+    <Content Include="Resources\future.png" />
+    <Content Include="Resources\futuristic-ai-chip-circuit-board.jpg" />
+    <None Include="Resources\id %281%29.png" />
+    <None Include="Resources\id %282%29.png" />
+    <None Include="Resources\icons8-web-application-firewall-50.png" />
+    <None Include="Resources\icons8-test-results-100.png" />
+    <None Include="Resources\icons8-city-hall-50.png" />
+    <None Include="Resources\icons8-license-48.png" />
+    <None Include="Resources\icons8-application-64.png" />
+    <None Include="Resources\icons8-application-64 %281%29.png" />
+    <None Include="Resources\icons8-donald-trump-50.png" />
+    <None Include="Resources\icons8-people-in-car-50.png" />
+    <None Include="Resources\icons8-user-groups-50.png" />
+    <None Include="Resources\icons8-open-end-wrench-50.png" />
+    <None Include="Resources\icons8-help-50.png" />
+    <None Include="Resources\icons8-user-rights-50.png" />
+    <None Include="Resources\icons8-settings-50.png" />
+    <None Include="Resources\icons8-user-menu-male-50.png" />
+    <None Include="Resources\icons8-logout-50.png" />
+    <None Include="Resources\icons8-car-100.png" />
+    <None Include="Resources\gender.png" />
+    <None Include="Resources\globe.png" />
+    <None Include="Resources\globe %281%29.png" />
+    <Content Include="Resources\id.png" />
+    <None Include="Resources\indesign %282%29.png" />
+    <None Include="Resources\indesign.png" />
+    <None Include="Resources\indesign %281%29.png" />
+    <None Include="Resources\Inactive-Users.png" />
+    <None Include="Resources\Inactive.png" />
+    <Content Include="Resources\info %281%29.png" />
+    <Content Include="Resources\info %281%291.png" />
+    <Content Include="Resources\info %282%29.png" />
+    <Content Include="Resources\info %283%29.png" />
+    <Content Include="Resources\info %283%291.png" />
+    <Content Include="Resources\info.png" />
+    <Content Include="Resources\info1.png" />
+    <Content Include="Resources\insurance.png" />
+    <Content Include="Resources\insurance1.png" />
+    <None Include="Resources\last-will.png" />
+    <None Include="Resources\invisible.png" />
+    <Content Include="Resources\left.png" />
+    <None Include="Resources\level-up.png" />
+    <Content Include="Resources\little_boy.png" />
+    <Content Include="Resources\little_female.png" />
+    <Content Include="Resources\location.png" />
+    <Content Include="Resources\location1.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\Login-Image.png" />
+    <Content Include="Resources\magnifying-glass.png" />
+    <None Include="Resources\market-growth.png" />
+    <None Include="Resources\market-analysis.png" />
+    <None Include="Resources\market-growth1.png" />
+    <None Include="Resources\male.png" />
+    <Content Include="Resources\market-research.png" />
+    <None Include="Resources\mars.png" />
+    <None Include="Resources\message.png" />
+    <Content Include="Resources\money.png" />
+    <None Include="Resources\new-moon.png" />
+    <None Include="Resources\new-document.png" />
+    <Content Include="Resources\next %281%29.png" />
+    <Content Include="Resources\next %282%29.png" />
+    <Content Include="Resources\next %283%29.png" />
+    <Content Include="Resources\Next.png" />
+    <Content Include="Resources\NextFast.png" />
+    <Content Include="Resources\NextFast1.png" />
+    <None Include="Resources\locked.png" />
+    <None Include="Resources\notification.png" />
+    <None Include="Resources\online.png" />
+    <None Include="Resources\online-order.png" />
+    <Content Include="Resources\password %281%29.png" />
+    <Content Include="Resources\password.png" />
+    <None Include="Resources\software-testing.png" />
+    <None Include="Resources\penetration-testing.png" />
+    <Content Include="Resources\person_man %281%29.png" />
+    <Content Include="Resources\person_man %281%292.png" />
+    <Content Include="Resources\person_man.png" />
+    <None Include="Resources\phone %281%29.png" />
+    <Content Include="Resources\phone.png" />
+    <None Include="Resources\proactive.png" />
+    <None Include="Resources\pin-code.png" />
+    <Content Include="Resources\real-time.png" />
+    <None Include="Resources\record.png" />
+    <Content Include="Resources\refresh.png" />
+    <Content Include="Resources\refresh1.png" />
+    <Content Include="Resources\reply %281%29.png" />
+    <Content Include="Resources\reply %282%29.png" />
+    <Content Include="Resources\reply.png" />
+    <Content Include="Resources\return.png" />
+    <Content Include="Resources\return1.png" />
+    <Content Include="Resources\right-arrow.png" />
+    <None Include="Resources\schedule.png" />
+    <Content Include="Resources\search %281%29.png" />
+    <Content Include="Resources\search-survey.png" />
+    <Content Include="Resources\search-survey1.png" />
+    <None Include="Resources\season.png" />
+    <Content Include="Resources\security %281%29.png" />
+    <Content Include="Resources\security.png" />
+    <Content Include="Resources\security1.png" />
+    <None Include="Resources\session-time.png" />
+    <None Include="Resources\shape.png" />
+    <Content Include="Resources\smart-lock.png" />
+    <None Include="Resources\software-license.png" />
+    <None Include="Resources\software-license1.png" />
+    <Content Include="Resources\steering-wheel.png" />
+    <Content Include="Resources\steering-wheel1.png" />
+    <Content Include="Resources\street-test-image.png" />
+    <Content Include="Resources\street_test.png" />
+    <Content Include="Resources\street_test1.png" />
+    <Content Include="Resources\survey.png" />
+    <Content Include="Resources\take.png" />
+    <None Include="Resources\test %281%29.png" />
+    <Content Include="Resources\test.png" />
+    <Content Include="Resources\time-management.png" />
+    <None Include="Resources\trend.png" />
+    <None Include="Resources\travel.png" />
+    <Content Include="Resources\trial.png" />
+    <None Include="Resources\trial1.png" />
+    <None Include="Resources\trust.png" />
+    <Content Include="Resources\tuition.png" />
+    <Content Include="Resources\tuition1.png" />
+    <Content Include="Resources\uifaces-human-avatar %2816%29.jpg" />
+    <Content Include="Resources\unlocked.png" />
+    <Content Include="Resources\unlock.png" />
+    <None Include="Resources\up-arrow.png" />
+    <Content Include="Resources\UpdatePersonImage.png" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\user %281%291.png" />
+    <Content Include="Resources\user.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\UsersGroup.png" />
+    <Content Include="Resources\vision-test-image.png" />
+    <Content Include="Resources\vision.png" />
+    <Content Include="Resources\vision_test.png" />
+    <Content Include="Resources\vision_test1.png" />
+    <Content Include="Resources\watchman.png" />
+    <None Include="Resources\world_asia.png" />
+    <None Include="Resources\white-eyes.png" />
+    <None Include="Resources\WhiteWrittenTest.png" />
+    <None Include="Resources\website.png" />
+    <None Include="Resources\white-license-60.png" />
+    <None Include="Resources\white-cancel-48.png" />
+    <None Include="Resources\white-delete-50.png" />
+    <None Include="Resources\white-edit-50.png" />
+    <None Include="Resources\White-schedule-24.png" />
+    <Content Include="Resources\written-test-image.png" />
+    <Content Include="Resources\written_test.png" />
+    <Content Include="Resources\written_test1.png" />
+    <Content Include="Resources\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Applications\Manage_Local_Licence_Apps\Local_Li_Apps_Screens\New_Local_Li_Apps_Screen\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

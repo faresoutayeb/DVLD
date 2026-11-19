@@ -1,0 +1,1017 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnRelease.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="btnRelease.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 13</value>
+  </data>
+  <data name="btnRelease.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 34</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnRelease.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnRelease.Text" xml:space="preserve">
+    <value>Release</value>
+  </data>
+  <data name="&gt;&gt;btnRelease.Name" xml:space="preserve">
+    <value>btnRelease</value>
+  </data>
+  <data name="&gt;&gt;btnRelease.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GradientButton, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnRelease.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnRelease.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblUserMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="lblUserMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 40</value>
+  </data>
+  <data name="lblUserMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 22</value>
+  </data>
+  <data name="lblUserMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lblUserMessage.Text" xml:space="preserve">
+    <value>Detain License</value>
+  </data>
+  <data name="&gt;&gt;lblUserMessage.Name" xml:space="preserve">
+    <value>lblUserMessage</value>
+  </data>
+  <data name="&gt;&gt;lblUserMessage.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;lblUserMessage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblUserMessage.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 13</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>32</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1386, 788</value>
+  </data>
+  <data name="guna2ControlBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="guna2ControlBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1328, 2</value>
+  </data>
+  <data name="guna2ControlBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 43</value>
+  </data>
+  <data name="guna2ControlBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.Name" xml:space="preserve">
+    <value>guna2ControlBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnMaximaze.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnMaximaze.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnMaximaze.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1277, 2</value>
+  </data>
+  <data name="btnMaximaze.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 43</value>
+  </data>
+  <data name="btnMaximaze.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;btnMaximaze.Name" xml:space="preserve">
+    <value>btnMaximaze</value>
+  </data>
+  <data name="&gt;&gt;btnMaximaze.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnMaximaze.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMaximaze.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnMinimize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnMinimize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1225, 2</value>
+  </data>
+  <data name="btnMinimize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 43</value>
+  </data>
+  <data name="btnMinimize.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Name" xml:space="preserve">
+    <value>btnMinimize</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMinimize.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbIsReleaseFilter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbIsReleaseFilter.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbIsReleaseFilter.Items" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="cbIsReleaseFilter.Items1" xml:space="preserve">
+    <value>Released</value>
+  </data>
+  <data name="cbIsReleaseFilter.Items2" xml:space="preserve">
+    <value>Not Released</value>
+  </data>
+  <data name="cbIsReleaseFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 6</value>
+  </data>
+  <data name="cbIsReleaseFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 36</value>
+  </data>
+  <data name="cbIsReleaseFilter.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="cbIsReleaseFilter.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;cbIsReleaseFilter.Name" xml:space="preserve">
+    <value>cbIsReleaseFilter</value>
+  </data>
+  <data name="&gt;&gt;cbIsReleaseFilter.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbIsReleaseFilter.Parent" xml:space="preserve">
+    <value>guna2GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;cbIsReleaseFilter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbFilterBy.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="cbFilterBy.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="cbFilterBy.Items" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="cbFilterBy.Items1" xml:space="preserve">
+    <value>Detain ID</value>
+  </data>
+  <data name="cbFilterBy.Items2" xml:space="preserve">
+    <value>Is Released</value>
+  </data>
+  <data name="cbFilterBy.Items3" xml:space="preserve">
+    <value>National no</value>
+  </data>
+  <data name="cbFilterBy.Items4" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="cbFilterBy.Items5" xml:space="preserve">
+    <value>Release App ID</value>
+  </data>
+  <data name="cbFilterBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="cbFilterBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 36</value>
+  </data>
+  <data name="cbFilterBy.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;cbFilterBy.Name" xml:space="preserve">
+    <value>cbFilterBy</value>
+  </data>
+  <data name="&gt;&gt;cbFilterBy.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;cbFilterBy.Parent" xml:space="preserve">
+    <value>guna2GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;cbFilterBy.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="guna2GradientButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="guna2GradientButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 8</value>
+  </data>
+  <data name="guna2GradientButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 34</value>
+  </data>
+  <data name="guna2GradientButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton2.Name" xml:space="preserve">
+    <value>guna2GradientButton2</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GradientButton, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton2.Parent" xml:space="preserve">
+    <value>guna2GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="guna2GradientButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="guna2GradientButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>569, 8</value>
+  </data>
+  <data name="guna2GradientButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 34</value>
+  </data>
+  <data name="guna2GradientButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="guna2GradientButton1.Text" xml:space="preserve">
+    <value>Hard Refresh</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton1.Name" xml:space="preserve">
+    <value>guna2GradientButton1</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GradientButton, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton1.Parent" xml:space="preserve">
+    <value>guna2GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;guna2GradientButton1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtFilterValue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtFilterValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 6</value>
+  </data>
+  <data name="txtFilterValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 36</value>
+  </data>
+  <data name="txtFilterValue.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="txtFilterValue.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtFilterValue.Name" xml:space="preserve">
+    <value>txtFilterValue</value>
+  </data>
+  <data name="&gt;&gt;txtFilterValue.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;txtFilterValue.Parent" xml:space="preserve">
+    <value>guna2GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtFilterValue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="guna2GroupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="guna2GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 53</value>
+  </data>
+  <data name="guna2GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 48</value>
+  </data>
+  <data name="guna2GroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox2.Name" xml:space="preserve">
+    <value>guna2GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox2.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="guna2HtmlLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="guna2HtmlLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="guna2HtmlLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 26</value>
+  </data>
+  <data name="guna2HtmlLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="guna2HtmlLabel3.Text" xml:space="preserve">
+    <value>Manage  Detained Licenses</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.Name" xml:space="preserve">
+    <value>guna2HtmlLabel3</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvDetainedLicenses.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <metadata name="guna2ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>346, 13</value>
+  </metadata>
+  <data name="showPersonDetailsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="showPersonDetailsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show Person Details</value>
+  </data>
+  <data name="showLicenseDetailsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="showLicenseDetailsToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Show License Details</value>
+  </data>
+  <data name="showPersonLicenseHistoryToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="showPersonLicenseHistoryToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Show Person License History</value>
+  </data>
+  <data name="releaseDetainedLicenseToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 22</value>
+  </data>
+  <data name="releaseDetainedLicenseToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Release Detained License</value>
+  </data>
+  <data name="guna2ContextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 92</value>
+  </data>
+  <data name="&gt;&gt;guna2ContextMenuStrip1.Name" xml:space="preserve">
+    <value>guna2ContextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;guna2ContextMenuStrip1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ContextMenuStrip, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="dgvDetainedLicenses.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 107</value>
+  </data>
+  <data name="dgvDetainedLicenses.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 249</value>
+  </data>
+  <data name="dgvDetainedLicenses.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;dgvDetainedLicenses.Name" xml:space="preserve">
+    <value>dgvDetainedLicenses</value>
+  </data>
+  <data name="&gt;&gt;dgvDetainedLicenses.Type" xml:space="preserve">
+    <value>GlobalCustomControls.MyGridView, GlobalCustomControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dgvDetainedLicenses.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;dgvDetainedLicenses.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ctrlDataGridPagesMoving2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8pt</value>
+  </data>
+  <data name="ctrlDataGridPagesMoving2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 362</value>
+  </data>
+  <data name="ctrlDataGridPagesMoving2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 41</value>
+  </data>
+  <data name="ctrlDataGridPagesMoving2.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;ctrlDataGridPagesMoving2.Name" xml:space="preserve">
+    <value>ctrlDataGridPagesMoving2</value>
+  </data>
+  <data name="&gt;&gt;ctrlDataGridPagesMoving2.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.ctrlDataGridPagesMoving, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlDataGridPagesMoving2.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;ctrlDataGridPagesMoving2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnDetainLicense.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="btnDetainLicense.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 13</value>
+  </data>
+  <data name="btnDetainLicense.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 34</value>
+  </data>
+  <data name="btnDetainLicense.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="btnDetainLicense.Text" xml:space="preserve">
+    <value>Detain</value>
+  </data>
+  <data name="&gt;&gt;btnDetainLicense.Name" xml:space="preserve">
+    <value>btnDetainLicense</value>
+  </data>
+  <data name="&gt;&gt;btnDetainLicense.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GradientButton, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnDetainLicense.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnDetainLicense.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblTotalCount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="lblTotalCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>681, 22</value>
+  </data>
+  <data name="lblTotalCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 22</value>
+  </data>
+  <data name="lblTotalCount.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="lblTotalCount.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCount.Name" xml:space="preserve">
+    <value>lblTotalCount</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCount.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCount.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCount.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="guna2PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="guna2PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="guna2PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 26</value>
+  </data>
+  <data name="guna2PictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="guna2PictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox2.Name" xml:space="preserve">
+    <value>guna2PictureBox2</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox2.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="guna2HtmlLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="guna2HtmlLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>601, 21</value>
+  </data>
+  <data name="guna2HtmlLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="guna2HtmlLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="guna2HtmlLabel2.Text" xml:space="preserve">
+    <value>Records:</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.Name" xml:space="preserve">
+    <value>guna2HtmlLabel2</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.Parent" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="guna2GroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="guna2GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 82</value>
+  </data>
+  <data name="guna2GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>746, 411</value>
+  </data>
+  <data name="guna2GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox1.Name" xml:space="preserve">
+    <value>guna2GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2GroupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ctrlActualDateTime1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>965, 2</value>
+  </data>
+  <data name="ctrlActualDateTime1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 54</value>
+  </data>
+  <data name="ctrlActualDateTime1.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;ctrlActualDateTime1.Name" xml:space="preserve">
+    <value>ctrlActualDateTime1</value>
+  </data>
+  <data name="&gt;&gt;ctrlActualDateTime1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.ctrlActualDateTime, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlActualDateTime1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlActualDateTime1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="guna2HtmlLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18.25pt</value>
+  </data>
+  <data name="guna2HtmlLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 12</value>
+  </data>
+  <data name="guna2HtmlLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 31</value>
+  </data>
+  <data name="guna2HtmlLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="guna2HtmlLabel14.Text" xml:space="preserve">
+    <value>Manage  Detained Licenses</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel14.Name" xml:space="preserve">
+    <value>guna2HtmlLabel14</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel14.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel14.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ctrlRecentDetainActivities1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 506</value>
+  </data>
+  <data name="ctrlRecentDetainActivities1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 261</value>
+  </data>
+  <data name="ctrlRecentDetainActivities1.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;ctrlRecentDetainActivities1.Name" xml:space="preserve">
+    <value>ctrlRecentDetainActivities1</value>
+  </data>
+  <data name="&gt;&gt;ctrlRecentDetainActivities1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlRecentDetainActivities, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlRecentDetainActivities1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlRecentDetainActivities1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ctrlDetainReasons_Top5_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 502</value>
+  </data>
+  <data name="ctrlDetainReasons_Top5_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>548, 253</value>
+  </data>
+  <data name="ctrlDetainReasons_Top5_1.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;ctrlDetainReasons_Top5_1.Name" xml:space="preserve">
+    <value>ctrlDetainReasons_Top5_1</value>
+  </data>
+  <data name="&gt;&gt;ctrlDetainReasons_Top5_1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlDetainReasons_Top5_, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlDetainReasons_Top5_1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlDetainReasons_Top5_1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ctrlNewDetentionsThisMonth1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 86</value>
+  </data>
+  <data name="ctrlNewDetentionsThisMonth1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 125</value>
+  </data>
+  <data name="ctrlNewDetentionsThisMonth1.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsThisMonth1.Name" xml:space="preserve">
+    <value>ctrlNewDetentionsThisMonth1</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsThisMonth1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlNewDetentionsThisMonth, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsThisMonth1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsThisMonth1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ctrlNewDetentionsLast30Days1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 349</value>
+  </data>
+  <data name="ctrlNewDetentionsLast30Days1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 129</value>
+  </data>
+  <data name="ctrlNewDetentionsLast30Days1.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsLast30Days1.Name" xml:space="preserve">
+    <value>ctrlNewDetentionsLast30Days1</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsLast30Days1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlNewDetentionsLast30Days, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsLast30Days1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlNewDetentionsLast30Days1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ctrlFinesOverview1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1119, 502</value>
+  </data>
+  <data name="ctrlFinesOverview1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 253</value>
+  </data>
+  <data name="ctrlFinesOverview1.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;ctrlFinesOverview1.Name" xml:space="preserve">
+    <value>ctrlFinesOverview1</value>
+  </data>
+  <data name="&gt;&gt;ctrlFinesOverview1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlFinesOverview, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlFinesOverview1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlFinesOverview1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ctrlTotalCurrentlyDetainedLicenses1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 217</value>
+  </data>
+  <data name="ctrlTotalCurrentlyDetainedLicenses1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 129</value>
+  </data>
+  <data name="ctrlTotalCurrentlyDetainedLicenses1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalCurrentlyDetainedLicenses1.Name" xml:space="preserve">
+    <value>ctrlTotalCurrentlyDetainedLicenses1</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalCurrentlyDetainedLicenses1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlTotalCurrentlyDetainedLicenses, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalCurrentlyDetainedLicenses1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalCurrentlyDetainedLicenses1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ctrlTotalReleasedLicenses1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 349</value>
+  </data>
+  <data name="ctrlTotalReleasedLicenses1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 126</value>
+  </data>
+  <data name="ctrlTotalReleasedLicenses1.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalReleasedLicenses1.Name" xml:space="preserve">
+    <value>ctrlTotalReleasedLicenses1</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalReleasedLicenses1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlTotalReleasedLicenses, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalReleasedLicenses1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalReleasedLicenses1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ctrlTotalDetainedLicenses1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 82</value>
+  </data>
+  <data name="ctrlTotalDetainedLicenses1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 129</value>
+  </data>
+  <data name="ctrlTotalDetainedLicenses1.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedLicenses1.Name" xml:space="preserve">
+    <value>ctrlTotalDetainedLicenses1</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedLicenses1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlTotalDetainedLicenses, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedLicenses1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedLicenses1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ctrlTotalDetainedFees1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 214</value>
+  </data>
+  <data name="ctrlTotalDetainedFees1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 129</value>
+  </data>
+  <data name="ctrlTotalDetainedFees1.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedFees1.Name" xml:space="preserve">
+    <value>ctrlTotalDetainedFees1</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedFees1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.Detain_Licenses_Controls.ctrlTotalDetainedFees, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedFees1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ctrlTotalDetainedFees1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="guna2PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="guna2PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="guna2PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 41</value>
+  </data>
+  <data name="guna2PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="guna2PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox1.Name" xml:space="preserve">
+    <value>guna2PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2PictureBox1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>WindowsDefaultBounds</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ManageDetainLicenseScreen</value>
+  </data>
+  <data name="&gt;&gt;guna2BorderlessForm1.Name" xml:space="preserve">
+    <value>guna2BorderlessForm1</value>
+  </data>
+  <data name="&gt;&gt;guna2BorderlessForm1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2BorderlessForm, Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;showPersonDetailsToolStripMenuItem.Name" xml:space="preserve">
+    <value>showPersonDetailsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;showPersonDetailsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showLicenseDetailsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>showLicenseDetailsToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;showLicenseDetailsToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showPersonLicenseHistoryToolStripMenuItem1.Name" xml:space="preserve">
+    <value>showPersonLicenseHistoryToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;showPersonLicenseHistoryToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;releaseDetainedLicenseToolStripMenuItem1.Name" xml:space="preserve">
+    <value>releaseDetainedLicenseToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;releaseDetainedLicenseToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmManageDetainLicenseScreen</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ctrlDataGridPagesMoving1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 432</value>
+  </data>
+  <data name="ctrlDataGridPagesMoving1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>911, 41</value>
+  </data>
+  <data name="ctrlDataGridPagesMoving1.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;ctrlDataGridPagesMoving1.Name" xml:space="preserve">
+    <value>ctrlDataGridPagesMoving1</value>
+  </data>
+  <data name="&gt;&gt;ctrlDataGridPagesMoving1.Type" xml:space="preserve">
+    <value>DVLD_Presentation_Layer.Global_Controls.ctrlDataGridPagesMoving, DVLD_Presentation_Layer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>
