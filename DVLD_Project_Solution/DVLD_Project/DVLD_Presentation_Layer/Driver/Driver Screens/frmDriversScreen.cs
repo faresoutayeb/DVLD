@@ -37,7 +37,7 @@ namespace DVLD_Presentation_Layer.Driver.Driver_Screens
         private async Task _LoadDriversInfoToDataGrid()
         {
 
-            _CurrentDriversInfoTable = await clsDriver.GetAllDrivers_ViewAsync();
+            _CurrentDriversInfoTable = await Task.Run(() => clsDriver.GetAllDrivers_ViewAsync());
             dgvDrivers.RowTemplate.Height = 35;
             dgvDrivers.DataSource = _CurrentDriversInfoTable;
             cbFilterBy.SelectedIndex = 0;
