@@ -82,7 +82,7 @@ namespace DVLD_Presentation_Layer.Manage_Users_Permissions.User_Permissions_Scre
 
         private async Task _LoadUsersInfo()
         {
-            _dtAllUsers =await clsUserPermissions.GetManageUsersPermissionsInfo();
+            _dtAllUsers = await Task.Run(() => clsUserPermissions.GetManageUsersPermissionsInfo());
             dgvUsersPermissions.DataSource = _dtAllUsers;
 
             _SetUserTableColumns();
