@@ -33,7 +33,7 @@ namespace DVLD_Presentation_Layer.Applications.Manage_Local_Driving_Licence_Appl
 
         private async void frmListLocalDrivingLicesnseApplications_Load(object sender, EventArgs e)
         {
-            _dtAllLocalDrivingLicenseApplications = await clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplicationsViewAsync();
+            _dtAllLocalDrivingLicenseApplications = await Task.Run(() => clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplicationsViewAsync());
             dgvLocalDrivingLicenseApplications.DataSource = _dtAllLocalDrivingLicenseApplications.DefaultView;
 
             lblRecordsCount.Text = dgvLocalDrivingLicenseApplications.Rows.Count.ToString();
