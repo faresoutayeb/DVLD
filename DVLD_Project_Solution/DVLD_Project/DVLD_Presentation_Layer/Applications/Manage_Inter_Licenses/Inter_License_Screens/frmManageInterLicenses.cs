@@ -31,8 +31,7 @@ namespace DVLD_Presentation_Layer.International_Driving_License.International_Dr
 
         private async Task LoadFormListInternationalLicesnseApplications()
         {
-            _dtInternationalLicenseApplications = await clsInternationalLicense.GetAllInternationalLicensesAsync();
-            dgvInternationalLicenses.DataSource = _dtInternationalLicenseApplications.DefaultView;
+            _dtInternationalLicenseApplications = await Task.Run(() => clsInternationalLicense.GetAllInternationalLicensesAsync());            dgvInternationalLicenses.DataSource = _dtInternationalLicenseApplications.DefaultView;
             lblInternationalLicensesRecords.Text = _dtInternationalLicenseApplications.DefaultView.Count.ToString();
             cbFilterBy.SelectedIndex = 0;
 
