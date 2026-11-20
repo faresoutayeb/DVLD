@@ -1,4 +1,4 @@
-﻿using DVLD_Bussiness_Layer;
+using DVLD_Bussiness_Layer;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -41,12 +41,17 @@ namespace DVLD_Presentation_Layer
             OnValidationError?.Invoke();
         }
 
-
+        public event Action OnUserAccountLocked;
+        private void UserAccountLocked()
+        {
+            OnUserAccountLocked?.Invoke();
+        }
         private void InitilizeLocalEvents()
         {
             OnWrongLoginCredential += _WhenWrongLoginCredential;
             OnNotActiveUser += _WhenNotActiveUser;
             OnValidationError += _WhenValidationError;
+            OnUserAccountLocked += _WhenUserAccountLocked;
             clsSecurity.OnIssueGettingStoredCredentials += _WhenIssueGettingStoredCredentials;
             clsSecurity.OnRememberMeIssue += _WhenRememberStoredCredentialsIssue;
         }
@@ -64,7 +69,10 @@ namespace DVLD_Presentation_Layer
         {
             MessageBox.Show("Error Some field not valid put the mouse on the red icons to see the error", "Validation Error",MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
         }
-
+        private void _WhenUserAccountLocked()
+        {
+            MessageBox.Show("User Account Locked call the admin to unlock your account", "Account Locked", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+        }
         private void _WhenWrongLoginCredential()
         {
             if(MessageBox.Show("Invalid UserName/Password","Wrong Login Credential", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning)==DialogResult.Retry)
@@ -142,7 +150,14 @@ namespace DVLD_Presentation_Layer
 
                     
                     return;
-                 }
+                }
+
+                if(!User.IsLock)
+                {
+                    _WhenUserAccountLocked();
+                    return;
+                }
+
                  clsGlobalUserInfo.CurrentLogInUser= User;
                 UserLog=new clsUserLog();
                 UserLog.UserID= clsGlobalUserInfo.CurrentLogInUser.UserID;
