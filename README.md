@@ -1,7 +1,22 @@
 # DVLD
 🚗 DVLD – Driving &amp; Vehicle License Department Management System | A desktop application designed to automate and manage the driver's licensing lifecycle, from applicant registration and driving tests to license issuance and ongoing license management. 💻
 
+## Project Videos
 
+### 1. Business Overview
+An introduction to the DVLD (Driving & Vehicle License Department) system, explaining its main purpose, business requirements, and the services it provides. This video demonstrates the application's main features and how it manages the different driving license processes.
+
+[Watch Business Overview](YOUR_VIDEO_LINK)
+
+### 2. Database Design
+An overview of the database design and structure, covering the main tables, relationships, constraints, and stored procedures. This video explains how the database is organized to support the application's business operations and maintain data integrity.
+
+[Watch Database Design](YOUR_VIDEO_LINK)
+
+### 3. Technical Overview
+An overview of the technical implementation of the DVLD project, covering its architecture, technologies, and programming concepts. This video explores the application layers, OOP principles, advanced C# and .NET features, database integration, security, and permission management.
+
+[Watch Technical Overview](YOUR_VIDEO_LINK)
 
 ## Project Overview
 
