@@ -25,25 +25,25 @@ namespace DVLD_Presentation_Layer
             /// Handles unhandled exceptions on the UI thread.
             /// Attempts to log the exception and displays an error message.
             /// </summary>
-            //System.Windows.Forms.Application.ThreadException += (sender, e) =>
-            //{
-            //    try
-            //    {
-            //        clsEventLog.LogError(
-            //            e.Exception,
-            //            "Global UI Exception Handler");
-            //    }
-            //    catch
-            //    {
-            //        //Prevent logging failure from causing another exception.
-            //    }
+            System.Windows.Forms.Application.ThreadException += (sender, e) =>
+            {
+                try
+                {
+                    clsEventLog.LogError(
+                        e.Exception,
+                        "Global UI Exception Handler");
+                }
+                catch
+                {
+                    //Prevent logging failure from causing another exception.
+                }
 
-            //    MessageBox.Show(
-            //       $"An unexpected error occurred. Please try again. {e.Exception.Message}",
-            //        "Application Error",
-            //        MessageBoxButtons.OK,
-            //        MessageBoxIcon.Error);
-            //};
+                MessageBox.Show(
+                  $"An unexpected error occurred. Please try again. {e.Exception.Message}",
+                   "Application Error",
+                    MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+            };
 
             /// <summary>
             /// Initializes the logging system before the application starts.
