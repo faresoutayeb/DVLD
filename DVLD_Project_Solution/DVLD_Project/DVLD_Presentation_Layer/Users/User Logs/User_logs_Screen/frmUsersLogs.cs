@@ -79,7 +79,7 @@ namespace DVLD_Presentation_Layer.Users.User_Logs.User_logs_Screen
 
         private async Task _LoadUsersInfo()
         {           
-            _dtLoginsLogs = await clsUserLog.GetLogsInfoAsync();
+            _dtLoginsLogs = await Task.Run(() => clsUserLog.GetLogsInfoAsync());
 
             dgvLoginsLogs.DataSource = _dtLoginsLogs.DefaultView;
             _SetUserTableColumns();
