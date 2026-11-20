@@ -152,7 +152,7 @@ namespace DVLD_Presentation_Layer
                     return;
                 }
 
-                if(!User.IsLock)
+                if(User.IsLock)
                 {
                     _WhenUserAccountLocked();
                     return;
