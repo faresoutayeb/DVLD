@@ -74,7 +74,7 @@ namespace DVLD_Presentation_Layer.Detained_License.Manage_Detain_Licenses_Screen
             cbFilterBy.SelectedIndex = 0;
 
 
-            _dtDetainedLicenses = await clsDetainedLicense.GetAllDetainedLicensesViewAsync();
+            _dtDetainedLicenses = await Task.Run(() => clsDetainedLicense.GetAllDetainedLicensesViewAsync());
             SetDataGridStracture();
 
 
