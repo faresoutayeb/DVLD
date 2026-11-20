@@ -172,7 +172,7 @@ namespace DVLD_Presentation_Layer
         //---------------------------- Controls Events-------------------------------------------------
         private async Task _HardRefreshPeoplList()
         {
-            _dtAllPeople =await clsPerson.GetAllPeopleAsync();
+            _dtAllPeople= await Task.Run(() => clsPerson.GetAllPeopleAsync());
 
             _dtPeople = _dtAllPeople.DefaultView.ToTable(
                 false, "PersonID", "NationalNo", "FirstName", "LastName",
