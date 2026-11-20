@@ -40,7 +40,7 @@ namespace DVLD_Presentation_Layer.Users.User_Screens
 
         private async Task _LoadUsersInfoToDataGrid()
         {
-            _dtAllUsers =await clsUser.GetUserScreenUsersInfoAsync();
+            _dtAllUsers = await Task.Run(() => clsUser.GetUserScreenUsersInfoAsync());
 
             dgvUsers.DataSource = _dtAllUsers;
             cbFilterBy.SelectedIndex = 0;
